@@ -1,0 +1,113 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand .logo-small {
+    width: 80px; 
+    height: auto; 
+    margin: 0 0 0 10px;
+}
+
+.nav-link {
+    transition: color 0.3s ease-in-out;
+    color: #fff;
+    margin: 0 4px;
+    
+}
+
+
+/* Cards */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.card-link {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.card-link .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Carrusel */
+
+.carousel-item {
+    height: 100%;
+    position: relative;
+}
+
+.carousel-item::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    z-index: 1; 
+}
+
+.carousel-inner img {
+    height: 720px;
+    object-fit: cover; 
+}
+
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2; 
+}
+
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .nav-link {
+        margin-left: 10px;
+    }
+
+    .navbar-collapse {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    #carouselExampleIndicators {
+        height: 50vh;
+    }
+
+    .carousel-inner img {
+        object-fit: cover;
+        height: 50vh;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
